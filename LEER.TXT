@@ -1,0 +1,14 @@
+SE DEBE INSTALAR LA SIGUIENTE VERSION DEL PAQUETE :
+
+npm i -D html-loader@1
+
+el script en package.json se pone la siguiente linea
+
+    "start": "webpack serve --open"
+.para hacer el hash en el nombre del style , en contentHash ahora se debe escribir todo en minusculas, se escribe asi
+       
+       new MiniCssExtractPlugin({
+            filename: '[name].[contenthash].css',
+            ignoreOrder: false
+        })
+    
